@@ -1,3 +1,3 @@
-# Database:
-
-ehtavudb
+# Installation
+nvm use
+npm ci
