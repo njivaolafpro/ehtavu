@@ -1,8 +1,14 @@
 ## Installation
 
-```bash
-$ npm install
-```
+- install Makefile support
+
+- launch dev mode:
+`make launch-dev`
+
+- launch migrations
+`make migrate-db`
+
+- 
 
 ## Running the app
 

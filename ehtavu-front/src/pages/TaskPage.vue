@@ -29,7 +29,7 @@
 
     <div class="grid grid-cols-4 gap-4" v-if="tasksRef && tasksRef.length">
       <div v-for="taskItem in tasksRef">
-        <TaskItem :item-name="taskItem.name" :item-description="taskItem.description" />
+        <TaskItem :item-title="taskItem.title" :item-description="taskItem.description" />
       </div>
 
     </div>

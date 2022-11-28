@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 defineProps({
-    itemName: String,
+    itemTitle: String,
     itemDescription: String,
 });
 
@@ -22,7 +22,7 @@ defineProps({
             </a>
         </div>
         <div class="p-5 pt-3 text-center">
-            <span class="font-bold text-xl group-hover:text-primary dark:text-white">{{ itemName }}</span>
+            <span class="font-bold text-xl group-hover:text-primary dark:text-white">{{ itemTitle }}</span>
             <p class="text-light group-hover:text-primary/70 dark:text-gray-300">{{ itemDescription }}</p>
         </div>
     </a>

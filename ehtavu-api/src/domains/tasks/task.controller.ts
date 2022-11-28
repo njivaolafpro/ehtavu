@@ -1,4 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
+import { Task } from '@prisma/client';
 import { TaskService } from './task.service';
 
 @Controller()
@@ -6,10 +7,11 @@ export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 
   @Get('/api/tasks/me')
-  getMyTasks(): { data: any[]; error: any } {
+  async getMyTasks(): Promise<{ data: Task[]; error: any }> {
     // TODO type it
+
     return {
-      data: this.taskService.getMyTasks(),
+      data: await this.taskService.getMyTasks(),
       error: null,
     };
   }
