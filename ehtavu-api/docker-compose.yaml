@@ -1,0 +1,33 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+
+  pgdb:
+    image: postgres:15.1-bullseye
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: example_ehtavu_pass
+      POSTGRES_DB: ehtavudatabase
+      POSTGRES_USER: postgres
+    volumes:
+      - ehtavudev-postgres-data:/var/lib/postgresql/data
+    networks:
+      - dev
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - dev
+
+networks:
+  dev:
+    external: true
+  
+volumes:
+  ehtavudev-postgres-data:
+    external: true
