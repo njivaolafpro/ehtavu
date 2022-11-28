@@ -1,6 +1,6 @@
 # Ehtavu
 
-Hi, Ehtavu is just a task management system ( in progress ) for learning Vue Js particularly.
+Hi, Ehtavu is just a task management system ( in progress )
 
 # Architecture:
 - front: Vue
@@ -9,7 +9,7 @@ Hi, Ehtavu is just a task management system ( in progress ) for learning Vue Js 
 # Roadmap:
 [ ] Setup ✅
 
-[ ] Task list page 🟠
+[ ] Task list page ✅
 
 [ ] Task management -> create / modify / cancel🟠
 
