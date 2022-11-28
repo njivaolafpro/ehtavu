@@ -9,7 +9,7 @@ console.log('tasks->', tasksRef)
 const taskServiceInstance = buildTaskService();
 taskServiceInstance.getTasksList().then(({ data }) => {
   console.log('data ->', data);
-  tasksRef.value = data.items;
+  tasksRef.value = data.data;
 
   console.log('tasksRef AFTER->', tasksRef)
 }, (err) => {

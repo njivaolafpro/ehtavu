@@ -5,7 +5,7 @@ import axios from 'axios';
 let requesterInstance;
 
 const getTasksList = () => {
-    return requesterInstance.get('tasks', { timeout: 1500 });
+    return requesterInstance.get('tasks/me', { timeout: 1500 });
 };
 
 const createTask = (taskItem) => {

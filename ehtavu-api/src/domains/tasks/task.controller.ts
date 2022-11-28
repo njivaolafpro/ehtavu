@@ -5,7 +5,7 @@ import { TaskService } from './task.service';
 export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 
-  @Get('/tasks/me')
+  @Get('/api/tasks/me')
   getMyTasks(): { data: any[]; error: any } {
     // TODO type it
     return {
